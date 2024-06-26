@@ -1,0 +1,287 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&display=swap');
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+ .app {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  
+} 
+
+
+
+/* main content */
+.mainContainer {
+  flex: 1 0 auto;
+  width: 100%;
+  background-image: url('../src/assets/beach1.jpg');
+  background-size:cover;
+  background-repeat:repeat-y;
+  background-color: rgba(67, 93, 210,0.3);
+  background-blend-mode:lighten;
+  
+}
+
+
+/* header */
+.navbar {
+  background-color:rgba(252,231,243,.6);
+  margin: 0;
+  height: 80px;
+  align-self: stretch;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1140px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brandLink{
+  display: flex;
+  
+}
+
+
+.logoImg {
+  height: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+
+.brandText{
+  font-size: 1rem;
+  align-self: flex-end;
+  font-family: "Paytone One", sans-serif;
+}
+
+.brandTextLarge{
+  font-size:1.5rem;
+}
+
+.themeToggle{
+  font-size: 1.5rem;
+}
+
+.navLink{
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 0 !important;
+  margin: 0 1rem;
+}
+
+.navLink:hover{
+  border-bottom-color: #0d6efd;
+}
+
+.navLink:focus{
+  color: #0d6efd;
+}
+
+.navLink {
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 0 !important;
+  margin: 0 1rem;
+  transition: border-bottom .5s ease;
+  
+  &:hover{
+      border-bottom-color: $brandColor;
+  }
+  &:focus{
+      border-bottom-color: $brandColor;
+  }
+}
+
+
+
+/* hero section */
+.heroSection {
+  min-height: 500px;
+  /* background-image: url('assets/sydney.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(67, 93, 210,0.8); */
+  /* multiply: the background-image and background-color are multiplied and typically this leads to a darker image than before. */
+  /* background-blend-mode:darken; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.heroContainer {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap:1rem; 
+  padding:2rem
+}
+.heroLeft{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroLeft h1{
+  font-family: "Paytone One", sans-serif;
+  font-size: 3rem;
+
+}
+.heroRight{
+  width: 80%;
+  flex: 1;
+  text-align: center;
+
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(252,231,243,.6)
+}
+.heroRight p {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* section2 */
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+.sectionTwo h2{
+  font-family: "Paytone One", sans-serif;
+}
+.cityLists{
+  width:90vw;
+  max-width: 1140px;
+  margin:2rem auto;
+  padding:0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.linkCard{
+  transition:0.3s ease;
+}
+
+.linkCard:hover{
+  transform: scale(1.05);
+}
+
+
+
+/* trip plan page */
+.tripPlanDiv {
+  width: 100vw;
+  background-image: url('../src/assets/beach1.jpg');
+  background-size:cover;
+  background-repeat:repeat-y;
+  background-color: rgba(67, 93, 210,0.6);
+  background-blend-mode:lighten;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tripPlanContainer {
+  width:80%;
+  max-width: 1140px;
+  margin:5rem;
+  padding: 2rem;
+  background-color: rgba(221, 221, 221,0.6);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.tripPlanContainer h1{
+  align-self: center;
+  font-family: "Paytone One", sans-serif;
+}
+
+/* mytrips page */
+
+.myTripsDiv {
+  width: 100vw;
+  height: 80vh;
+  background-image: url('../src/assets/beach.jpg');
+  background-size:cover;
+  background-repeat:repeat-y;
+  background-color: rgba(67, 93, 210,0.6);
+  background-blend-mode:lighten;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myTripsDiv h1 {
+  font-family: "Paytone One", sans-serif;
+}
+
+
+
+/* trip card component */
+
+.tripCard {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 2rem;
+  padding:2rem;
+  border-radius: 1rem;
+  background-color: rgba(221, 221, 221,0.6);
+  box-shadow: "0 2px 8px rgba(0, 0, 0, 0.2)"
+}
+
+
+/* not found page */
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:3rem
+}
+/* footer */
+.footer{
+  height: 100px;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(252,231,243,.6);
+
+
+
+}
+.footerContainer {
+  width:100%;
+  max-width:  1140px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .heroContainer{
+    flex-direction: row;
+  }
+}
